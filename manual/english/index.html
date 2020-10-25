@@ -1,0 +1,21 @@
+<h2 align="center">SMS Module Manual</h2>
+<h3>General</h3>
+<p>This module is a port of a PHP-Nuke module written by Matnet &lt;matnet@kedahonline.net&gt; for use in Malaysia. It lets visitors to your site send SMS messages to other people <em>provided</em> that they know the other person's mobile number (or id) and Service provider.</p>
+<p>The E-Xoops version has been modified to include configuration options accessible through the System Admin menu.</p>
+<h3>Install</h3>
+<p>Should be completely straightforward. Just unzip into your site folder and remember to chmod the cache folder and files to 777 & 666.</p>
+
+<h3>Configuration</h3>
+
+<p>There is a list of SMS service providers held in a cache page. You will need to edit this list to make sure that any SMS service providres that you want to use are included. There are two entries required: a short name e.g. 'Telco'; and the e-mail suffix for the provider e.g. '@mobile.telco.net'. NB it may take soem research to find these references - when you have gathered a few please e-mail them to me at sms@bobjanes.com and I'll include them in an upgrade pack.</p>
+<p>SMS user ids have two forms. Sometimes they are just the mobile number e.g. 0123456789; sometimes they are a user name. For instance, to get e-mails sent to my mobile I have to register with o2.co.uk and set up a username and some account details. To send an SMS to me the e-mail address is bobjanes@o2.co.uk </p>
+<p>The admin config menu asks for your SMS e-mail address. You need to enter this if you are going to use the 'Send to Me' block. The address is held in a cache file and is not displayed when a message is sent. Instead it shows "me".</p>
+<h3>Version History</h3>
+<h4>Version 1.2</h4>
+<ul><li>Removed the 'sent from' configuration option - replaced with _HTTP_HOST</li>
+<li>Added a 'Send to me' block. This uses a cookie to limit messages to two in 24 hours from a single user.</li><li>Various changes to language files</li>
+<li>Removed bugs that caused submit button to initiate file download.</li>
+<li>Removed need for user configuration of E-Xoops folder.</li></ul>
+<h3>Future development</h3>
+<p>No current plans.</p>
+<p>Bob Janes &lt;bob@bobjanes.com&gt;<br>29 Sept 2003</p>
